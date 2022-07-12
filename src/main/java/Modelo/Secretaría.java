@@ -6,8 +6,8 @@ package Modelo;
  */
 public class Secretaría extends Usuario{
 
-    public Secretaría(String idUsuario, String contrasena) {
-        super(idUsuario, contrasena);
+    public Secretaría(String idUsuario, String contrasena, Permisos permisos) {
+        super(idUsuario, contrasena, permisos);
     }
     
 }

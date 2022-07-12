@@ -7,11 +7,13 @@ package Modelo;
 public class Mantenimiento {
     private String tipoMantenimieinto;
     private String magnitudMantenimiento;
+    private double inversionRealizada;
     private ContratoAlquiler contratoAlquiler;
 
-    public Mantenimiento(String tipoMantenimieinto, String magnitudMantenimiento, ContratoAlquiler contratoAlquiler) {
+    public Mantenimiento(String tipoMantenimieinto, String magnitudMantenimiento, double inversionRealizada, ContratoAlquiler contratoAlquiler) {
         this.tipoMantenimieinto = tipoMantenimieinto;
         this.magnitudMantenimiento = magnitudMantenimiento;
+        this.inversionRealizada = inversionRealizada;
         this.contratoAlquiler = contratoAlquiler;
     }
 
@@ -55,5 +57,19 @@ public class Mantenimiento {
      */
     public void setContratoAlquiler(ContratoAlquiler contratoAlquiler) {
         this.contratoAlquiler = contratoAlquiler;
+    }
+
+    /**
+     * @return the inversionRealizada
+     */
+    public double getInversionRealizada() {
+        return inversionRealizada;
+    }
+
+    /**
+     * @param inversionRealizada the inversionRealizada to set
+     */
+    public void setInversionRealizada(double inversionRealizada) {
+        this.inversionRealizada = inversionRealizada;
     }
 }

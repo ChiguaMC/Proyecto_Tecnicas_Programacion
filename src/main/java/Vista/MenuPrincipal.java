@@ -35,6 +35,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         botonMantenimientos = new javax.swing.JButton();
         botonClientes = new javax.swing.JButton();
         botonContratos = new javax.swing.JButton();
+        botonLogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú");
@@ -59,6 +60,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         botonContratos.setText("Ver Contratos");
 
+        botonLogout.setText("Logout");
+
         javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
         panelPrincipal.setLayout(panelPrincipalLayout);
         panelPrincipalLayout.setHorizontalGroup(
@@ -77,13 +80,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
                             .addComponent(botonPropiedades, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(botonUsuarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(botonPagos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botonMantenimientos, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)))
+                            .addComponent(botonMantenimientos, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)))
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(botonClientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(panelPrincipalLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(botonContratos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(botonContratos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panelPrincipalLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(botonLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panelPrincipalLayout.setVerticalGroup(
@@ -105,7 +111,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addComponent(botonClientes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(botonContratos)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botonLogout)
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         getContentPane().add(panelPrincipal);
@@ -151,6 +159,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton botonClientes;
     public javax.swing.JButton botonContratos;
+    public javax.swing.JButton botonLogout;
     public javax.swing.JButton botonMantenimientos;
     public javax.swing.JButton botonPagos;
     public javax.swing.JButton botonPropiedades;

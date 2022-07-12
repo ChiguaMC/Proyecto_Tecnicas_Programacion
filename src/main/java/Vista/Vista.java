@@ -12,12 +12,19 @@ public class Vista {
     public VistaPropiedades propiedades;
     public VistaUsuarios usuarios;
     public VistaContratos contratos;
+    public VistaPagos pagos;
+    public VistaMantenimientos mantenimientos;
+    public VistaClientes clientes;
+    
     public Vista() {
         this.login = new Login();
         this.menu = new MenuPrincipal();
         this.propiedades = new VistaPropiedades();
         this.usuarios = new VistaUsuarios();
         this.contratos= new VistaContratos();
+        this.pagos= new VistaPagos();
+        this.mantenimientos= new VistaMantenimientos();
+        this.clientes = new VistaClientes();
     }
     
     public void mensajeUsuarioNoExiste()

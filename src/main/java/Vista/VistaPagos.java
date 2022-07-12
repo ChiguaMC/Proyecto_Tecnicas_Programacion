@@ -8,12 +8,12 @@ package Vista;
  *
  * @author Grupo Técnicas de Programación
  */
-public class VistaPropiedades extends javax.swing.JFrame {
+public class VistaPagos extends javax.swing.JFrame {
 
     /**
      * Creates new form VistaPropiedades
      */
-    public VistaPropiedades() {
+    public VistaPagos() {
         initComponents();
     }
 
@@ -28,33 +28,33 @@ public class VistaPropiedades extends javax.swing.JFrame {
 
         panelPrincipal = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tablaPropiedades = new javax.swing.JTable();
+        tablaPagos = new javax.swing.JTable();
         botonRegresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Propiedades");
+        setTitle("Contratos");
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         panelPrincipal.setBackground(new java.awt.Color(255, 255, 255));
         panelPrincipal.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(0, 204, 255)));
 
-        tablaPropiedades.setModel(new javax.swing.table.DefaultTableModel(
+        tablaPagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Finca #", "Área", "Valor Fiscal", "Provincia", "Cantón", "Distrito", "Dirección", "Estado", "Niveles", "Color", "Parqueos", "Año", "Fotografía"
+                "Contrato", "Pago", "Fecha de pago", "Monto", "Pagado por"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false, true, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tablaPropiedades);
+        jScrollPane1.setViewportView(tablaPagos);
 
         botonRegresar.setText("Regresar");
 
@@ -101,20 +101,21 @@ public class VistaPropiedades extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaPropiedades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaPagos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaPropiedades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaPagos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaPropiedades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaPagos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaPropiedades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaPagos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VistaPropiedades().setVisible(true);
+                new VistaPagos().setVisible(true);
             }
         });
     }
@@ -123,6 +124,6 @@ public class VistaPropiedades extends javax.swing.JFrame {
     public javax.swing.JButton botonRegresar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel panelPrincipal;
-    public javax.swing.JTable tablaPropiedades;
+    public javax.swing.JTable tablaPagos;
     // End of variables declaration//GEN-END:variables
 }
