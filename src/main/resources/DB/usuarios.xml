@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Usuarios>
+    <Usuario>
+        <idUsuario>Josue</idUsuario>
+        <contrasena>1</contrasena>
+        <permisos>
+            <agregar>true</agregar>
+            <borrar>true</borrar>
+            <leer>true</leer>
+        </permisos>
+        <role>Inversionista</role>
+    </Usuario>
+    <Usuario>
+        <idUsuario>JosueSecretaría</idUsuario>
+        <contrasena>1</contrasena>
+        <permisos>
+            <agregar>false</agregar>
+            <borrar>false</borrar>
+            <leer>true</leer>
+        </permisos>
+        <role>Secretaría</role>
+    </Usuario>
+    <Usuario>
+        <idUsuario>Josue3</idUsuario>
+        <contrasena>1</contrasena>
+        <permisos>
+            <agregar>true</agregar>
+            <borrar>true</borrar>
+            <leer>true</leer>
+        </permisos>
+        <role>Administrador</role>
+    </Usuario>
+    <Usuario>
+        <idUsuario>Josue4</idUsuario>
+        <contrasena>1</contrasena>
+        <permisos>
+            <agregar>true</agregar>
+            <borrar>true</borrar>
+            <leer>true</leer>
+        </permisos>
+        <role>Administrador</role>
+    </Usuario>
+</Usuarios>

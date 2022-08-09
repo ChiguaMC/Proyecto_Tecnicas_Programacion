@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Clientes>
+    <Cliente>
+        <idCliente>1</idCliente>
+        <numeroTelefono>1</numeroTelefono>
+        <nombre>1</nombre>
+        <primerApellido>1</primerApellido>
+        <correoElectronico>1</correoElectronico>
+        <estadoCivil>Soltero</estadoCivil>
+        <estadoCliente>Activo</estadoCliente>
+    </Cliente>
+    <Cliente>
+        <idCliente>2</idCliente>
+        <numeroTelefono>1</numeroTelefono>
+        <nombre>1</nombre>
+        <primerApellido>1</primerApellido>
+        <correoElectronico>1</correoElectronico>
+        <estadoCivil>Casado</estadoCivil>
+        <estadoCliente>Activo</estadoCliente>
+    </Cliente>
+    <Cliente>
+        <idCliente>3</idCliente>
+        <numeroTelefono>71840033</numeroTelefono>
+        <nombre>josue</nombre>
+        <primerApellido>Moraga</primerApellido>
+        <correoElectronico>josue.chigua17@gmail.com</correoElectronico>
+        <estadoCivil>Soltero</estadoCivil>
+        <estadoCliente>Interesado</estadoCliente>
+    </Cliente>
+</Clientes>

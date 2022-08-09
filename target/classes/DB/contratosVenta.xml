@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ContratoVentas>
+    <ContratoVenta>
+        <idContrato>VEN00003</idContrato>
+        <monto>100000.0</monto>
+        <fechaContrato>2022-08-09T15:50:02.350-06:00</fechaContrato>
+        <propiedad>
+            <numeroFinca>4</numeroFinca>
+            <areaDelTerreno>1.0</areaDelTerreno>
+            <valorFiscal>1.0</valorFiscal>
+            <provincia>Heredia</provincia>
+            <canton>Heredia</canton>
+            <distrito>Mercedes</distrito>
+            <direccion>asdasdasdasdas</direccion>
+            <estadoPropiedad>Vendida</estadoPropiedad>
+        </propiedad>
+        <cliente>
+            <idCliente>2</idCliente>
+            <numeroTelefono>1</numeroTelefono>
+            <nombre>1</nombre>
+            <primerApellido>1</primerApellido>
+            <correoElectronico>1</correoElectronico>
+            <estadoCivil>Casado</estadoCivil>
+            <estadoCliente>Activo</estadoCliente>
+        </cliente>
+        <comision>2500.0</comision>
+    </ContratoVenta>
+</ContratoVentas>
