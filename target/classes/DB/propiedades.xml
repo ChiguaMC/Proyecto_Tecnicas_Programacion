@@ -58,4 +58,19 @@
         <anoCostruccion>2022</anoCostruccion>
         <rutaFotografia>src\main\resources\ImagenesCasas\4.png</rutaFotografia>
     </Casa>
+    <Casa>
+        <numeroFinca>5</numeroFinca>
+        <areaDelTerreno>100.0</areaDelTerreno>
+        <valorFiscal>1.99919191E8</valorFiscal>
+        <provincia>Heredia</provincia>
+        <canton>Heredia</canton>
+        <distrito>Mercedes</distrito>
+        <direccion>asdasdasd</direccion>
+        <estadoPropiedad>En posesión</estadoPropiedad>
+        <niveles>2</niveles>
+        <color>1</color>
+        <espacioParqueo>2</espacioParqueo>
+        <anoCostruccion>2022</anoCostruccion>
+        <rutaFotografia>src\main\resources\ImagenesCasas\5.png</rutaFotografia>
+    </Casa>
 </Casas>

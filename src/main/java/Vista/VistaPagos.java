@@ -33,7 +33,7 @@ public class VistaPagos extends javax.swing.JFrame {
         botonAgregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("Contratos");
+        setTitle("Pagos");
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         panelPrincipal.setBackground(new java.awt.Color(255, 255, 255));

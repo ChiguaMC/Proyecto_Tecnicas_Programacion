@@ -249,17 +249,21 @@ public class Control implements MouseListener, ActionListener, DocumentListener,
 
             String comision = "";
             String costoMantenimiento = "";
+            String tipo= "";
 
             if (objeto.getClass().getSimpleName().equals("ContratoVenta")) {
                 comision = Double.toString(((ContratoVenta) contrato).getComision());
+                tipo = "Venta";
+                
             } else if (objeto.getClass().getSimpleName().equals("ContratoAlquiler")) {
                 costoMantenimiento = Double.toString(((ContratoAlquiler) contrato).getCostoMantenimiento());
+                tipo = "Alquiler";
             }
             JButton botonPropiedad = new JButton("Ver propiedad");
             botonPropiedad.setActionCommand(Integer.toString(contrato.getPropiedad().getNumeroFinca()));
             JButton botonCliente = new JButton("Ver cliente");
             botonCliente.setActionCommand(contrato.getCliente().getIdCliente());
-            tableModel.addRow(new Object[]{contrato.getIdContrato(), contrato.getMonto(), contrato.getFechaContrato().toString(), botonPropiedad, botonCliente, "Alquiler", comision, costoMantenimiento});
+            tableModel.addRow(new Object[]{contrato.getIdContrato(), contrato.getMonto(), contrato.getFechaContrato().toString(), botonPropiedad, botonCliente, tipo, comision, costoMantenimiento});
         }
     }
 
